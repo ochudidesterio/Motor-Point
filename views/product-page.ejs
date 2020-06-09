@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart | Home</title>
+    <link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script defer src="/assets/js/all.js"></script>
+    <link href="/assets/css/all.css" rel="stylesheet">
+        <link href="/assets/webfonts" rel="stylesheet">
+
+    <link href="/bootstrap-4.4.1-dist/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!---nav beggins-->
+
+    <nav class="nav-bar">
+        <div class="navbar-center">
+            <span class="nav-logo-text">
+                <h1><span class="highlight">Mr Virus</span> Motor Company</h1>
+            </span>
+            <div class="nav-right-wrapper">
+                <div class="cart-btn">
+                    <span class="nav-icon">
+                        <i class="fas fa-cart-plus"></i>
+                    </span>
+                    <div class="cart-items">0</div>
+                </div>
+                <div class="nav-logout">
+                    <form action="/logout" method="POST">
+                    <button class="btn btn-sm btn-primary">Sign Out</button>
+                    </form>
+                    
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!--end of nav-->
+    <!---header-->
+    <header class="product-header">
+        <div class="bunner">
+            <h1 class="bunner-tittle">Dear Customer</h1>
+            <button class="bunner-btn">shop now</button>
+        </div>
+    </header>
+    <!---end hearder-->
+    <!--products-->
+    <section class="products">
+        <div class="products-title">
+            <h2>Our Products</h2>
+        </div>
+        <div class="products-center">
+            <!---single product-->
+            <article class="product">
+                <div class="image-container">
+                    <img class="product-img" src="/assets/images/de.jpg" height="250px" width="250px">
+                    <button class="bag-btn" data-id="1">
+                    <i class="fas fa-shopping-cart"></i>
+                    add to bag</button>
+                </div>
+                <h3>mr virus</h3>
+                <h4>$10</h4>
+                <button class="view-product-btn">View Product</button>
+            </article>
+            <article class="product">
+                <div class="image-container">
+                    <img class="product-img" src="/assets/images/de.jpg" height="250px" width="250px">
+                    <button class="bag-btn" data-id="1">
+                    <i class="fas fa-shopping-cart"></i>
+                    add to bag</button>
+                </div>
+                <h3>mr virus</h3>
+                <h4>$10</h4>
+                <button class="view-product-btn">View Product</button>
+            </article>
+             
+            <!--end of single product-->
+        </div>
+    </section>
+    <!-- end products-->
+    <!--cart-overlay-->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h3>Your Selection</h3>
+            <div class="cart-content">
+                <!---cart item-->
+                <div class="cart-item">
+                    <img src="/assets/images/de.jpg" height="100" width="100" alt="">
+                    <div>
+                        <h4>Mr Virus</h4>
+                        <h5>$10</h5>
+                        <span class="remove-item">remove</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-up"></i>
+                        <p class="item-amount">1</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <!--end of cart item-->
+            </div>
+            <div class="cart-footer">
+                <h3>Total: $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart bunner-btn">clear cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+    </script>
+            <script src="/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
