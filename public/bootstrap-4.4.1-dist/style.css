@@ -1,3 +1,6 @@
+ body{
+     background: #686969;
+ }
  .nav-bar{
     position: sticky;
     top:0;
@@ -56,7 +59,7 @@
 /*end of nav*/
 .product-header{
     min-height: calc(70vh - 60px);
-    background: url("/public/assets/images/back.jpg") no-repeat;
+    background: url("/assets/images/bunnerbg.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -97,6 +100,7 @@ margin-bottom: 3rem;
 .products-title h2{
 text-align: center;
 font-size: 2.5rem;
+color: #ffff;
 margin-bottom: 5rem;
 text-transform: capitalize;
 letter-spacing: 0.1rem;
@@ -198,7 +202,7 @@ letter-spacing: 0.1rem;
     background:rgb(231,226,221);
     padding: 1.5rem;
     transition: all 0.3s linear;
-   transform: translateX(100%);
+   /* transform: translateX(100%); */
 }
 .showCart{
     transform: translateX(0);

@@ -10,6 +10,6 @@ module.exports = client
 
 const app = require('./app')
 app.listen(process.env.PORT,function(){
-    console.log("server running ")
+    console.log("server running at port 3000")
 })
 })
